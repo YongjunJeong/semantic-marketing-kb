@@ -1,0 +1,3 @@
+{"query": "recover abandoned carts", "context": {"industry": "retail", "channels": ["email"], "objective": "cart recovery"}, "expect_family": "recover_conversion-abandonment"}
+{"query": "birthday offer", "context": {"channels": ["in-app"]}, "expect_family": "increase_loyalty-lifecycle_date"}
+{"query": "back in stock alert", "context": {"channels": ["push"]}, "expect_family": "increase_conversion-catalog_event"}

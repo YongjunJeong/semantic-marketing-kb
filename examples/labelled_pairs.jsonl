@@ -1,0 +1,20 @@
+{"a": "src:vendor_a:a1c0de000001", "b": "src:vendor_a:a1c0de000002", "relation": "same_pattern", "rationale": "Duplicate document"}
+{"a": "src:vendor_a:a1c0de000001", "b": "src:vendor_b:b2d1ef000001", "relation": "same_pattern", "rationale": "Timed cart reminder across vendors"}
+{"a": "src:vendor_a:a1c0de000001", "b": "src:vendor_b:b2d1ef000002", "relation": "same_pattern", "rationale": "Cart reminder playbook"}
+{"a": "src:vendor_a:a1c0de000003", "b": "src:vendor_b:b2d1ef000004", "relation": "same_pattern", "rationale": "Viewed items follow-up across industries"}
+{"a": "src:vendor_a:a1c0de000003", "b": "src:vendor_b:b2d1ef000005", "relation": "same_pattern", "rationale": "Browse follow-up playbook"}
+{"a": "src:vendor_a:a1c0de000004", "b": "src:vendor_b:b2d1ef000007", "relation": "same_pattern", "rationale": "Signup series to first action"}
+{"a": "src:vendor_a:a1c0de000004", "b": "src:vendor_b:b2d1ef000008", "relation": "same_pattern", "rationale": "Welcome sequence playbook"}
+{"a": "src:vendor_a:a1c0de000005", "b": "src:vendor_b:b2d1ef000009", "relation": "same_pattern", "rationale": "Inactivity reminder then offer"}
+{"a": "src:vendor_a:a1c0de000007", "b": "src:vendor_b:b2d1ef000010", "relation": "same_pattern", "rationale": "Inventory restock alert"}
+{"a": "src:vendor_a:a1c0de000008", "b": "src:vendor_b:b2d1ef000011", "relation": "same_pattern", "rationale": "Price decrease alert across industries"}
+{"a": "src:vendor_a:a1c0de000009", "b": "src:vendor_b:b2d1ef000012", "relation": "same_pattern", "rationale": "Birthday greeting with offer"}
+{"a": "src:vendor_a:a1c0de000009", "b": "src:vendor_b:b2d1ef000013", "relation": "same_pattern", "rationale": "Birthday offer playbook"}
+{"a": "src:vendor_a:a1c0de000010", "b": "src:vendor_b:b2d1ef000014", "relation": "same_pattern", "rationale": "Personalized homepage widget"}
+{"a": "src:vendor_a:a1c0de000001", "b": "src:vendor_b:b2d1ef000003", "relation": "variant", "rationale": "Reminder versus discount incentive"}
+{"a": "src:vendor_a:a1c0de000001", "b": "src:vendor_b:b2d1ef000006", "relation": "variant", "rationale": "Cart versus reservation audience and event"}
+{"a": "src:vendor_a:a1c0de000007", "b": "src:vendor_a:a1c0de000008", "relation": "variant", "rationale": "Restock versus price decrease mechanism"}
+{"a": "src:vendor_a:a1c0de000005", "b": "src:vendor_a:a1c0de000006", "relation": "variant", "rationale": "Escalating reminders versus computed recommendations"}
+{"a": "src:vendor_a:a1c0de000001", "b": "src:vendor_a:a1c0de000003", "relation": "different", "rationale": "Cart abandonment versus browsing without cart add"}
+{"a": "src:vendor_a:a1c0de000009", "b": "src:vendor_a:a1c0de000004", "relation": "different", "rationale": "Birthday date versus signup trigger"}
+{"a": "src:vendor_a:a1c0de000010", "b": "src:vendor_b:b2d1ef000015", "relation": "different", "rationale": "On-page widget versus scheduled email digest"}

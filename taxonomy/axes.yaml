@@ -1,0 +1,288 @@
+version: 1
+axes:
+  industry:
+    prefix: ind
+    values:
+    - id: ind:retail
+      label: retail
+      aliases:
+      - retail
+      - ecommerce
+    - id: ind:travel
+      label: travel
+      aliases:
+      - travel
+  journey_stage:
+    prefix: stage
+    values:
+    - id: stage:conversion
+      label: conversion
+      aliases:
+      - conversion
+      - checkout
+      - booking
+    - id: stage:onboarding
+      label: onboarding
+      aliases:
+      - onboarding
+    - id: stage:winback
+      label: winback
+      aliases:
+      - winback
+    - id: stage:retention
+      label: retention
+      aliases:
+      - retention
+  objective:
+    prefix: obj
+    values:
+    - id: obj:recover_conversion
+      label: recover conversion
+      aliases:
+      - basket recovery
+      - recover cart
+      - cart recovery
+      - recover booking
+    - id: obj:increase_conversion
+      label: increase conversion
+      aliases:
+      - boost conversion
+    - id: obj:activate_new_users
+      label: activate new users
+      aliases:
+      - activation
+      - first purchase
+    - id: obj:reactivate_dormant
+      label: reactivate dormant
+      aliases:
+      - win-back
+      - reactivation
+    - id: obj:increase_loyalty
+      label: increase loyalty
+      aliases:
+      - loyalty
+      - member engagement
+    - id: obj:increase_discovery
+      label: increase discovery
+      aliases:
+      - discovery
+      - cross-sell
+  metric:
+    prefix: m
+    values:
+    - id: m:conversion_rate
+      label: conversion rate
+      aliases:
+      - checkout completion
+      - conversion rate
+      - booking rate
+    - id: m:click_rate
+      label: click rate
+      aliases:
+      - ctr
+      - click rate
+    - id: m:open_rate
+      label: open rate
+      aliases:
+      - open rate
+    - id: m:reactivation_rate
+      label: reactivation rate
+      aliases:
+      - reactivation rate
+      - returning users
+    - id: m:revenue
+      label: revenue
+      aliases:
+      - revenue
+  segment:
+    prefix: seg
+    values:
+    - id: seg:cart_abandoner
+      label: cart abandoner
+      aliases:
+      - basket abandoner
+      - left items in cart
+      - cart abandoner
+    - id: seg:browse_abandoner
+      label: browse abandoner
+      aliases:
+      - viewed product
+      - browsed without buying
+      - product viewer
+    - id: seg:booking_abandoner
+      label: booking abandoner
+      aliases:
+      - unfinished reservation
+    - id: seg:new_user
+      label: new user
+      aliases:
+      - new signup
+      - new member
+      - new user
+    - id: seg:lapsed
+      label: lapsed
+      aliases:
+      - lapsed
+      - dormant
+    - id: seg:wishlist
+      label: wishlist
+      aliases:
+      - back in stock waiter
+      - saved item
+      - price watcher
+    - id: seg:loyalty_member
+      label: loyalty member
+      aliases:
+      - member
+      - loyalty member
+    - id: seg:all_visitors
+      label: all visitors
+      aliases:
+      - everyone
+  channel:
+    prefix: ch
+    values:
+    - id: ch:email
+      label: email
+      aliases:
+      - email
+      group: messaging
+    - id: ch:push
+      label: push
+      aliases:
+      - push alerts
+      - push
+      group: app
+    - id: ch:web
+      label: web
+      aliases:
+      - web overlay
+      - web
+      - onsite
+      group: web
+    - id: ch:sms
+      label: sms
+      aliases:
+      - sms
+      group: messaging
+    - id: ch:in_app
+      label: in app
+      aliases:
+      - in-app
+      group: app
+  format:
+    prefix: fmt
+    values:
+    - id: fmt:message
+      label: message
+      aliases:
+      - email message
+      - notification
+      - message
+    - id: fmt:coupon
+      label: coupon
+      aliases:
+      - voucher
+      - offer code
+    - id: fmt:overlay
+      label: overlay
+      aliases:
+      - overlay
+    - id: fmt:banner
+      label: banner
+      aliases:
+      - app banner
+    - id: fmt:recommendation_widget
+      label: recommendation widget
+      aliases:
+      - recommendation widget
+      - product carousel
+  trigger:
+    prefix: trg
+    values:
+    - id: trg:abandonment
+      label: abandonment
+      aliases:
+      - cart left
+      - abandoned
+      - abandonment
+      - left without buying
+    - id: trg:page_view
+      label: page view
+      aliases:
+      - product view
+      - page view
+    - id: trg:signup
+      label: signup
+      aliases:
+      - signup
+      - account created
+    - id: trg:inactivity
+      label: inactivity
+      aliases:
+      - inactivity
+      - days since last visit
+    - id: trg:catalog_event
+      label: catalog event
+      aliases:
+      - restock
+      - back in stock
+      - price drop
+      - price change
+    - id: trg:lifecycle_date
+      label: lifecycle date
+      aliases:
+      - birthday
+    - id: trg:scheduled
+      label: scheduled
+      aliases:
+      - weekly
+  capability:
+    prefix: cap
+    values:
+    - id: cap:event_tracking
+      label: event tracking
+      aliases:
+      - events
+    - id: cap:journey_orchestration
+      label: journey orchestration
+      aliases:
+      - journey flow
+    - id: cap:messaging_delivery
+      label: messaging delivery
+      aliases:
+      - delivery
+      - push delivery
+    - id: cap:segmentation
+      label: segmentation
+      aliases:
+      - segments
+    - id: cap:recommendation_engine
+      label: recommendation engine
+      aliases:
+      - recommendations
+      - recommender
+    - id: cap:catalog_feed
+      label: catalog feed
+      aliases:
+      - catalog
+    - id: cap:web_personalization
+      label: web personalization
+      aliases:
+      - web personalization
+      - onsite personalization
+  complexity:
+    prefix: cx
+    values:
+    - id: cx:low
+      label: low
+      aliases:
+      - low
+    - id: cx:medium
+      label: medium
+      aliases:
+      - medium
+    - id: cx:high
+      label: high
+      aliases:
+      - high
