@@ -1,14 +1,14 @@
-# Synthetic fixtures
+# 합성 예제 데이터
 
-All records are fictional. `vendor_a` and `vendor_b` represent different publishing styles; `RetailCo` and `TravelCo` are generic fictional customers. URLs use `example.com` and are identifiers, not pages to fetch. Dates and percentage outcomes are invented and demonstrate evidence fields only.
+모든 레코드는 가상입니다. `vendor_a`와 `vendor_b`는 서로 다른 자료 작성 방식을, `RetailCo`와 `TravelCo`는 일반적인 가상 고객을 나타냅니다. URL은 `example.com`을 사용하며 실제로 가져올 페이지가 아닌 식별자입니다. 날짜와 성과 비율도 근거 필드를 보여 주기 위해 만든 값입니다.
 
-- `source_cases.jsonl`: 26 pre-extracted records: 25 campaign sources and one excluded operational document. One campaign source is a duplicate publication. Text, tags, and mechanism keys are curated inputs, not extraction results.
-- `labelled_pairs.jsonl`: 20 manually specified pairs with rationales: 13 same-pattern, 4 variant, 3 different. The evaluator measures merged versus separate membership, not the accuracy of all three labels.
-- `queries.jsonl`: three illustrative queries, optional taxonomy context, and expected top-three families. These are smoke checks, not a held-out retrieval benchmark.
-- `canonical_usecases.jsonl`: refreshed canonical snapshot from the default hashing run. Reproduce with `smkb build`; the full evidence and merge-log files are generated in `build/`. Snapshot log references require those companion files for inspection.
+- `source_cases.jsonl`: 미리 추출된 형태의 레코드 26개입니다. 캠페인 소스 25개와 제외 대상인 운영 문서 하나가 있으며, 캠페인 소스 중 하나는 중복 게시물입니다. 텍스트, 태그, 작동 방식 키는 추출 결과가 아닌 수동으로 정리한 입력입니다.
+- `labelled_pairs.jsonl`: 판단 이유를 포함한 수동 정의 쌍 20개입니다. 같은 패턴 13쌍, 변형 4쌍, 서로 다른 개념 3쌍입니다. 평가기는 병합 여부를 측정하며 세 라벨 전체의 분류 정확도를 측정하지 않습니다.
+- `queries.jsonl`: 예시 질의 3개와 선택적인 taxonomy 문맥, 상위 3개에 포함되어야 할 패턴군입니다. 기본 동작 확인용이며 별도 평가 데이터로 구성한 검색 벤치마크가 아닙니다.
+- `canonical_usecases.jsonl`: 기본 해싱 실행으로 갱신한 대표 레코드 스냅샷입니다. `smkb build`로 재현할 수 있으며, 전체 근거와 병합 로그는 `build/`에 생성됩니다. 스냅샷의 로그 참조를 확인하려면 함께 생성되는 파일이 필요합니다.
 
-During release preparation, source records were recovered from the local normalized synthetic snapshot by removing derived normalization and hashes. Taxonomy IDs and aliases were reconstructed from its raw-to-normalized mappings (52 observed values). Channel grouping was reconciled with the existing taxonomy tests. No additional vocabulary coverage is claimed.
+공개 준비 과정에서 로컬의 정규화된 합성 스냅샷으로부터 파생 정규화 값과 해시를 제거해 소스 레코드를 복원했습니다. 원본 라벨과 정규화 값의 대응으로 taxonomy ID와 별칭을 복원했으며, 관측된 값은 52개입니다. 채널 그룹은 기존 taxonomy 테스트에 맞췄습니다. 그 이상의 어휘 범위를 지원한다고 주장하지 않습니다.
 
-The pair file was rewritten explicitly from the described mechanisms; it is not claimed to be the original historical benchmark. Its rationales are inspectable. The perfect score on these curated pairs does not estimate performance on new data or prove absence of false merges outside the labelled set.
+쌍 라벨 파일은 설명된 작동 방식을 바탕으로 명시적으로 다시 작성했으며, 과거의 원본 벤치마크라고 주장하지 않습니다. 판단 이유는 파일에서 확인할 수 있습니다. 정리된 쌍에서 얻은 만점은 새로운 데이터의 성능을 추정하거나 라벨 집합 밖의 잘못된 병합이 없음을 입증하지 않습니다.
 
-The owner has confirmed independent authorship and synthetic origin. Unless otherwise noted, all synthetic fixtures are covered by the same [MIT License](../LICENSE) as the code and documentation. Copyright (c) 2026 Yongjun Jeong.
+소유자는 독립적인 작성과 합성 데이터임을 확인했습니다. 별도 표기가 없는 한 모든 합성 예제에는 코드와 문서에 적용되는 동일한 [MIT License](../LICENSE)가 적용됩니다. Copyright (c) 2026 Yongjun Jeong.
